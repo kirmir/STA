@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Mine formatVersion="1.0.0.0">
+  <Name>Шахта №1</Name>
+  <Type>Initial</Type>
+  <Version>1.0.0.0</Version>
+  <Description>Описание топологии шахты №1</Description>
+  <Author>Святный В.А.</Author>
+  <SoundSpeed>300</SoundSpeed>
+  <Topology>
+    <Structures>
+      <Structure>
+        <Name>G1</Name>
+        <Tunnels>
+          <Tunnel>
+            <Name>Q1</Name>
+            <SourceNode>Pa</SourceNode>
+            <TargetNode>U1</TargetNode>
+            <Description>X1 в таблице. Выработка с атмосферным давлением вначале</Description>
+            <Length>800</Length>
+            <CrossSectionArea>6.5</CrossSectionArea>
+            <AirDensity>1.2484</AirDensity>
+            <AirResistance>0.3872</AirResistance>
+            <SourceAirPressure>0</SourceAirPressure>
+          </Tunnel>
+          <Tunnel>
+            <Name>Q2</Name>
+            <SourceNode>U1</SourceNode>
+            <TargetNode>U2</TargetNode>
+            <Description>X2 в таблице</Description>
+            <Length>150</Length>
+            <CrossSectionArea>6.5</CrossSectionArea>
+            <AirDensity>1.2484</AirDensity>
+            <AirResistance>0.0726</AirResistance>
+          </Tunnel>
+          <Tunnel>
+            <Name>Q3</Name>
+            <SourceNode>U2</SourceNode>
+            <TargetNode>U3</TargetNode>
+            <Description>Y1 в таблице</Description>
+            <Length>1925</Length>
+            <CrossSectionArea>4.67</CrossSectionArea>
+            <AirDensity>1.2259</AirDensity>
+            <AirResistance>2.0213</AirResistance>
+          </Tunnel>
+          <Tunnel>
+            <Name>Q4</Name>
+            <SourceNode>U2</SourceNode>
+            <TargetNode>U3</TargetNode>
+            <Description>Y2 в таблице</Description>
+            <Length>1410</Length>
+            <CrossSectionArea>5.98</CrossSectionArea>
+            <AirDensity>1.2624</AirDensity>
+            <AirResistance>2.679</AirResistance>
+          </Tunnel>
+          <Tunnel>
+            <Name>Q5</Name>
+            <SourceNode>U1</SourceNode>
+            <TargetNode>U4</TargetNode>
+            <Description>Y3 в таблице</Description>
+            <Length>1720</Length>
+            <CrossSectionArea>4.5</CrossSectionArea>
+            <AirDensity>1.26</AirDensity>
+            <AirResistance>1.9264</AirResistance>
+          </Tunnel>
+          <Tunnel>
+            <Name>Q6</Name>
+            <SourceNode>U1</SourceNode>
+            <TargetNode>U4</TargetNode>
+            <Description>Y4 в таблице</Description>
+            <Length>934</Length>
+            <CrossSectionArea>4.97</CrossSectionArea>
+            <AirDensity>1.238</AirDensity>
+            <AirResistance>1.2796</AirResistance>
+          </Tunnel>
+          <Tunnel>
+            <Name>Q7</Name>
+            <SourceNode>U3</SourceNode>
+            <TargetNode>U4</TargetNode>
+            <Description>X3 в таблице</Description>
+            <Length>150</Length>
+            <CrossSectionArea>6.5</CrossSectionArea>
+            <AirDensity>1.2484</AirDensity>
+            <AirResistance>0.0726</AirResistance>
+          </Tunnel>
+          <Tunnel>
+            <Name>Q8</Name>
+            <SourceNode>U4</SourceNode>
+            <TargetNode>Pv</TargetNode>
+            <Description>X4 в таблице. Выработка с вентилятором в конце.</Description>
+            <Length>650</Length>
+            <CrossSectionArea>6.5</CrossSectionArea>
+            <AirDensity>1.2484</AirDensity>
+            <AirResistance>0.3146</AirResistance>
+            <TargetAirPressure>-4100</TargetAirPressure>
+          </Tunnel>
+        </Tunnels>
+      </Structure>
+    </Structures>
+  </Topology>
+</Mine>

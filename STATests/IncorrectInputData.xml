@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Mine formatVersion="1.0.0.0">
+  <Name>Шахта №1</Name>
+  <Type>Initial</Type>
+  <Version>1.0.0.0</Version>
+  <Description>Описание топологии шахты №1</Description>
+  <Author>Святный В.А.</Author>
+  <SoundSpeed>-300</SoundSpeed>
+  <Topology>
+    <Structures>
+      <Structure>
+        <Name>G1</Name>
+        <Tunnels>
+          <Tunnel>
+            <Name>Q1</Name>
+            <SourceNode>U1</SourceNode>
+            <TargetNode>U2</TargetNode>
+            <Description>X1 в таблице. Выработка с атмосферным давлением вначале</Description>
+            <Length>800</Length>
+            <CrossSectionArea>6.5</CrossSectionArea>
+            <AirDensity>1.2484</AirDensity>
+            <AirResistance>0.3872</AirResistance>
+            <SourceAirPressure>0</SourceAirPressure>
+          </Tunnel>
+          <Tunnel>
+            <Name>Q2</Name>
+            <SourceNode>U2</SourceNode>
+            <TargetNode>U3</TargetNode>
+            <Description>X2 в таблице</Description>
+            <Length>150</Length>
+            <CrossSectionArea>6.5</CrossSectionArea>
+            <AirDensity>1.2484</AirDensity>
+            <AirResistance>0.0726</AirResistance>
+          </Tunnel>
+        </Tunnels>
+      </Structure>
+    </Structures>
+  </Topology>
+</Mine>

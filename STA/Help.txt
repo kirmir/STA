@@ -1,0 +1,21 @@
+﻿Subsystem of Topological Analysis
+
+Validates mine topology and generates secondary topology with the specified
+parameters.
+
+Copyright (c) Myroshnychenko K.V. 2011
+
+Usage: STA.exe InputFile [/V:OutputLogFile] [/A:dX OutputFile | /P:N OutputFile]
+
+       /V            - Enabling validation of topology
+       /A            - Enabling approximation function
+       /P            - Enabling partitioning function
+       dX            - Value of delta X for approximation function
+       N             - Number of parts for partitioning function
+       InputFile     - XML-file with initial mine topology
+       OutputLogFile - XML-file for storing resulting log of validation
+       OutputFile    - XML-file for storing results of topological analysis;
+                       must be specified only with /A or /P (or both) flags
+
+Flags /A and /P can be set together. In this case STA will execute
+approximation first and then - partitioning of approximated topology.

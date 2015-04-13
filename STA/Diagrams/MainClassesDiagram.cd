@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="STA.TopologyProcessor">
+    <Position X="0.5" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAABQAAAAAAAAAAAAAAQAEAAAAAACAAAAA=</HashCode>
+      <FileName>TopologyProcessor.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Mine" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="STA.Helpers">
+    <Position X="4" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="STA.MineTopology.TopologyPart">
+    <Position X="4.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MineTopology\TopologyPart.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="STA.Validation.TopologyValidator">
+    <Position X="0.5" Y="2.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAADAAAAAAAgAAAAAQAAAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>Validation\TopologyValidator.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_errors" />
+      <Field Name="_mine" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="STA.Validation.ValidationLogRecord">
+    <Position X="0.5" Y="6.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAQAAAA=</HashCode>
+      <FileName>Validation\ValidationLogRecord.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="STA.Validation.TopologyValidationException">
+    <Position X="0.5" Y="4.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>Validation\TopologyValidationException.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ErrorsLog" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="STA.Validation.ErrorsLog">
+    <Position X="4" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Validation\ErrorsLog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="STA.MineTopology.Mine" Collapsed="true">
+    <Position X="3.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>MAkQAAAAAAAgAAAAgAAQAAQAACAAAAAQAQAQAAAAAAE=</HashCode>
+      <FileName>MineTopology\Mine.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

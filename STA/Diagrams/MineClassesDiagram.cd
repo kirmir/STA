@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="STA.MineTopology.Mine">
+    <Position X="0.5" Y="0.5" Width="1.75" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>MAkQAAAAAAAgAAAAgAAQAAQAACAAAAAQAQAQAAAAAAE=</HashCode>
+      <FileName>MineTopology\Mine.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Topology" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="STA.MineTopology.Structure">
+    <Position X="5.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MineTopology\Structure.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="STA.MineTopology.Topology">
+    <Position X="3.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAACCAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MineTopology\Topology.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="STA.MineTopology.Tunnel">
+    <Position X="3.5" Y="2" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAoAAAAAgQAAARBAAAAgIAAAAAAAAAgAAg=</HashCode>
+      <FileName>MineTopology\Tunnel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="STA.AdjacencyList.AdjacencyListNode">
+    <Position X="5" Y="5.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AdjacencyList\AdjacencyListNode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="STA.AdjacencyList.AdjacencyListItem">
+    <Position X="3.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAACAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AdjacencyList\AdjacencyListItem.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Direction" />
+    </ShowAsAssociation>
+  </Class>
+  <Enum Name="STA.AdjacencyList.TunnelDirection">
+    <Position X="0.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACA=</HashCode>
+      <FileName>AdjacencyList\TunnelDirection.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

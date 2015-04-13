@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Mine">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Name" type="xs:string" nillable="true" />
+        <xs:element name="Type" type="xs:string" fixed="Initial" />
+        <xs:element name="Version">
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="[0-9]+[.][0-9]+[.][0-9]+[.][0-9]+"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="Description" type="xs:string" nillable="true" />
+        <xs:element name="Author" type="xs:string" nillable="true" />
+        <xs:element name="SoundSpeed" nillable="true">
+          <xs:simpleType>
+            <xs:restriction base="xs:double">
+              <xs:minInclusive value="0"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="Topology">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Structures">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Structure">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Name">
+                            <xs:simpleType>
+                              <xs:restriction base="xs:string">
+                                <xs:minLength value="1" />
+                              </xs:restriction>
+                            </xs:simpleType>
+                          </xs:element>
+                          <xs:element name="Tunnels">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element maxOccurs="unbounded" name="Tunnel">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="Name">
+                                        <xs:simpleType>
+                                          <xs:restriction base="xs:string">
+                                            <xs:minLength value="1" />
+                                          </xs:restriction>
+                                        </xs:simpleType>
+                                      </xs:element>
+                                      <xs:element name="SourceNode">
+                                        <xs:simpleType>
+                                          <xs:restriction base="xs:string">
+                                            <xs:minLength value="1" />
+                                          </xs:restriction>
+                                        </xs:simpleType>
+                                      </xs:element>
+                                      <xs:element name="TargetNode">
+                                        <xs:simpleType>
+                                          <xs:restriction base="xs:string">
+                                            <xs:minLength value="1" />
+                                          </xs:restriction>
+                                        </xs:simpleType>
+                                      </xs:element>
+                                      <xs:element name="Description" type="xs:string" nillable="true" />
+                                      <xs:element name="Length">
+                                        <xs:simpleType>
+                                          <xs:restriction base="xs:double">
+                                            <xs:minExclusive value="0"/>
+                                          </xs:restriction>
+                                        </xs:simpleType>
+                                      </xs:element>
+                                      <xs:element name="CrossSectionArea">
+                                        <xs:simpleType>
+                                          <xs:restriction base="xs:double">
+                                            <xs:minExclusive value="0"/>
+                                          </xs:restriction>
+                                        </xs:simpleType>
+                                      </xs:element>
+                                      <xs:element name="AirDensity">
+                                        <xs:simpleType>
+                                          <xs:restriction base="xs:double">
+                                            <xs:minExclusive value="0"/>
+                                          </xs:restriction>
+                                        </xs:simpleType>
+                                      </xs:element>
+                                      <xs:element name="AirResistance">
+                                        <xs:simpleType>
+                                          <xs:restriction base="xs:double">
+                                            <xs:minInclusive value="0"/>
+                                          </xs:restriction>
+                                        </xs:simpleType>
+                                      </xs:element>
+                                      <xs:element name="SourceAirPressure" minOccurs="0" type="xs:double" />
+                                      <xs:element name="TargetAirPressure" minOccurs="0" type="xs:double" />
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                            <xs:unique name="UniqueTunnelName">
+                              <xs:selector xpath="Tunnel" />
+                              <xs:field xpath="Name" />
+                            </xs:unique>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="formatVersion" use="required" fixed="1.0.0.0" />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
